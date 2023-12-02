@@ -1,0 +1,149 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000;
+    overflow: hidden;
+}
+.main{
+    color: white;
+    height: 100vh;
+    display: flex;
+    padding: 0.5rem;
+    
+}
+.content{
+    background-color: #121212;
+    flex:1;
+    border-radius: 0.5rem ;
+    overflow: auto;
+    margin-left: 0.5rem ;
+}
+.sidebar{
+    background-color: black;
+    width: 340px;
+}
+.bottombar{
+    background-color: rgb(119, 0, 255);
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    bottom: 0px;
+    background-color: #000;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+.nav-item a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left:1rem ;
+    
+}
+.nav-item{
+    line-height: 2.5rem;
+    padding: 0.2rem 0.75rem;
+    opacity: 0.7;
+}
+.nav-item:hover{
+    opacity: 1;
+}
+.nav-item i{
+    font-size: 1.25rem;
+}
+.library-container{
+    margin-top: 0.5rem;
+    background-color: #121212;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+.lib-top{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;  
+
+}
+
+.lib-txt{
+    display: flex;
+    gap:1rem;
+    padding: 0.5rem 0.75rem;
+}
+.lib-txt img{
+    height: 1.25rem;
+    width: 1.25rem;
+    align-self: center;
+}
+.lib-txt a{
+    text-decoration: none;
+    color: white;
+    align-self: center;
+    font-weight: 500;
+    font-size: 1rem;
+   
+}
+.lib-txt{
+    opacity: 0.7;
+}
+.lib-txt:hover{
+    opacity: 1;
+}
+.lib-icons{
+    display: flex;
+    gap:1rem;
+    padding: 0.5rem 0.75rem;
+}
+.lib-icons i{
+    padding: 0.25rem;
+    align-self: center;
+    opacity: 0.7;
+}
+
+.lib-icons i:hover{
+    border-radius: 50%;
+    background-color: #1c1c1c;
+    opacity: 0.8;
+}
+.lib-card{
+    padding: 0 0.5rem 0.5rem;
+}
+.lib-card-item{
+    background-color: #242424;
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin: 0.5rem 0;
+    line-height: 1.75rem;
+}
+.lib-card-item #line1 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.lib-card-item #line2 {
+    font-size: 0.85rem;
+    opacity: 0.9;
+    font-weight: 500;
+}
+.lib-card-item button{
+    margin-top: 1rem;
+    color: black;
+    background-color: #f6f6f6;
+    font-weight: 700;
+    padding: 0.375rem 1rem;
+    border-radius: 100px;
+    border: 2px solid #f6f6f6;
+}
+.lib-card-item button:hover{
+    scale: 1.05;
+}

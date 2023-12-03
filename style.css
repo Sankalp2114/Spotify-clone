@@ -23,6 +23,7 @@ body{
     height: 87.75vh;
     border-radius: 0.5rem ;
     overflow: auto;
+    overflow-x: hidden;
     margin-left: 0.5rem ;
     padding: 0 1.25rem;
 }
@@ -416,6 +417,9 @@ span{
     }
     #premium{
         display: none;
+    }
+    .content {
+        overflow-x: hidden; 
     }
 }
 @media (max-width:1000px){

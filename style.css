@@ -17,9 +17,11 @@ body{
 .content{
     background-color: #121212;
     flex:1;
+    width: 100%;
     border-radius: 0.5rem ;
     overflow: auto;
     margin-left: 0.5rem ;
+    padding: 0 1.25rem;
 }
 .sidebar{
     background-color: black;
@@ -27,11 +29,13 @@ body{
 }
 .bottombar{
     background-color: rgb(119, 0, 255);
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 72px;
     bottom: 0px;
+    left: 0;
     background-color: #000;
+    z-index: 3;
 }
 .nav{
     background-color: #121212;
@@ -147,29 +151,22 @@ body{
 .lib-card-item button:hover{
     scale: 1.05;
 }
-.navigation{
+.content .navigation{
     display: flex;
     top: 0;
     background-color: #121212;
-    /* align-items: center; */
     justify-content: space-between;
     border-radius: 0.4rem;
     position: sticky;
     width: 100%;
     height: 7.5vh;
-    padding: 0.5rem 2rem;
 }
-/* .navigation > *{
-    width: 100%;
-} */
+
 .forward-back-btn,.right-nav{
     display: flex;
     align-items: center;
 }
-.right-nav{
-    /* flex: 1; */
-    margin-right: 3rem;
-}
+
 .nav-btn{
     color: black;
     background-color: #f6f6f6;
@@ -178,17 +175,22 @@ body{
     border-radius: 100px;
     margin:  0 0.2rem;
     border: 2px solid #f6f6f6;
-    scale: 0.9;
 }
 .forward-back-btn img{
+    height: 1.5rem;
+    width: 1.375rem;
     padding: 0.75rem;
+    background-color: #0A0A0A;
+    opacity: 0.8;
+    border-radius: 50%;
+    scale: 0.7;
 }
 .right-nav i{
     font-size: 1.25rem;
     margin: 0 0.25rem;
     padding: 0.5rem;
-    background-color: #080808;
-    border: 2px solid #080808;
+    background-color: #0A0A0A;
+    border: 2px solid #0A0A0A;
     border-radius: 50%;
     scale: 0.9;
 }   
@@ -198,4 +200,62 @@ body{
     font-size: 1rem;
     padding: 0rem;
     margin: 0rem;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-layout{
+    padding: .75rem;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    height: 240px;
+    width: 140px;
+    justify-content: space-between;
+    margin: 1rem 0;
+    position: relative;
+    margin-right: 1rem;
+    
+}
+.card-layout img{
+    width: 100%;
+    height: auto;
+    scale: 0.95;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 18px #181818;
+    z-index: 2;
+}
+.card-layout .title{
+    font-size: 1rem;
+    font-weight: 600;
+    padding-left: 6px;
+}
+.card-layout .desc{
+    color: #8a8a8a;
+    font-size: .75rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    padding-left: 6px;
+}
+.overlay{
+    top:0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #f6f6f6;
+    opacity: 0;
+    border-radius: .5rem;
+    z-index: 1;
+    transition: 0.15s ease-in;
+}
+.card-layout:hover{
+    .overlay{
+        opacity: 0.05;
+    }
+}
+hr{
+    opacity: 0.2;
 }

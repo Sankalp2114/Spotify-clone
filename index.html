@@ -12,6 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha512-... (use the correct integrity hash)" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+      $("#like").click(function() {
+        $(this).toggleClass("fa-regular fa-solid");
+      });
+    });
+  </script>
+  
 <body>
     <div class="main">
         <div class="sidebar">
@@ -151,7 +160,7 @@
             <div class="song-info">
                 <img src="assets\card2img.jpeg" alt="">
                 <p>Mahiye jinna sohna <br><span>Darshan Raval</span></p>
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart" id="like"></i>
             </div>
             <div class="music-control">
                 <div class="controls">

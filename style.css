@@ -428,3 +428,39 @@ span{
         width: 16rem; 
     }
 }
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #8e8e8e;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  html {
+    scrollbar-color: #8e8e8e transparent;
+    scrollbar-width: thin;
+  }
+  
+  body {
+    scrollbar-face-color: #888;
+    scrollbar-arrow-color: #fff;
+    scrollbar-shadow-color: #ddd;
+    scrollbar-highlight-color: #ddd;
+    scrollbar-3dlight-color: #ddd;
+    scrollbar-darkshadow-color: #ddd;
+    scrollbar-track-color: #f0f0f0;
+  } 
+  .content::-webkit-scrollbar {
+    width: 12px;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+  }
+  
+
+  .content:hover::-webkit-scrollbar {
+    opacity: 1; 
+  }

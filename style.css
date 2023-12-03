@@ -6,6 +6,8 @@
 body{
     background-color: #000;
     overflow: hidden;
+    min-width: 786px;
+
 }
 .main{
     color: white;
@@ -38,6 +40,7 @@ body{
     left: 0;
     background-color: #000;
     z-index: 3;
+    min-width: 786px;
 }
 .nav{
     background-color: #121212;
@@ -400,4 +403,24 @@ span{
 }
 #volume:hover::-webkit-slider-thumb {
     opacity: 1;
+}
+@media (max-width:1000px){
+    .mic{
+        display:none;
+    }
+    .q{
+        display:none;
+    }
+    .stream{
+        display:none;
+    }
+    #premium{
+        display: none;
+    }
+}
+@media (max-width:1000px){
+    .progress-bar input[type="range"] {
+        -webkit-appearance: none; 
+        width: 16rem; 
+    }
 }

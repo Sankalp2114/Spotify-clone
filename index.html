@@ -166,14 +166,14 @@
                 <div class="controls">
                     <img src="assets\player_icon1.png" alt="" class="player-icons">
                     <img src="assets\player_icon2.png" alt="" class="player-icons">
-                    <img src="assets\player_icon3.png" alt="" class="player-icons-play">
+                    <img src="assets\player_icon3.png" alt="" class="player-icons-play" id="play-btn">
                     <img src="assets\player_icon4.png" alt="" class="player-icons">
                     <img src="assets\player_icon5.png" alt="" class="player-icons">
                 </div>
                 <div class="progress-bar">
-                    <span>0:00</span>
-                    <input type="range" id="progress-bar" name="progress-bar" min="0" max="100" value="30">
-                    <span>4:21</span>
+                    <span id="start-time">0:00</span>
+                    <input type="range" id="progress-bar" name="progress-bar" min="0" max="100" value="0" step="0.5">
+                    <span id="end-time">4:21</span>
                     <!-- <script src="script.js"></script> -->
                 </div>
             </div>
@@ -182,9 +182,13 @@
                 <img src="assets\controls_icon3.png" alt="" class="q">
                 <img src="assets\controls_icon4.png" alt="" class="stream">
                 <img src="assets\controls_icon5.png" alt="" class="volume">
-                <input type="range" id="volume" name="volume" min="0" max="100" value="30">
-                <script src="script.js"></script>
+                <input type="range" id="volume" name="volume" min="0" max="100" value="0">
                 <img src="assets\album_icon2.png" alt="assets\album_icon2.png" class="multi-player">
+                <audio id="song1" loop>
+                    <source src=".\assets\Mahiye Jinna Sohna (Lyrics) - Darshan Raval.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <script src="script.js"></script>
             </div>
         </div>
     </div>

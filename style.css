@@ -322,7 +322,7 @@ hr{
     -webkit-appearance: none; 
     width: 20rem; 
     height: 4px;  
-    background: linear-gradient(to right, #1DB954 0%, #1DB954 30%, #d3d3d3 10%, #d3d3d3 100%);
+    background: linear-gradient(to right, #1DB954 0%, #1DB954 0%, #d3d3d3 0%, #d3d3d3 100%);
     border-radius: 5px; 
     outline: none; 
     opacity: 1; 
@@ -385,7 +385,7 @@ span{
     -webkit-appearance: none; 
     width: 8rem; 
     height: 4px;  
-    background: linear-gradient(to right, #1DB954 0%, #1DB954 30%, #d3d3d3 10%, #d3d3d3 100%);
+    background: linear-gradient(to right, #1DB954 0%, #1DB954 0%, #d3d3d3 0%, #d3d3d3 100%);
     border-radius: 5px; 
     outline: none; 
     opacity: 1; 

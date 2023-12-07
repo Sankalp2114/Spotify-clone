@@ -72,15 +72,18 @@ audio.volume = 0;
 volume.addEventListener('input',function(e){
     audio.volume = e.currentTarget.value / 100;
 });
-let playButton = document.getElementById('play-btn');
+let playButton = document.getElementById('pause-btn');
 let song1 = document.getElementById('song1');
 let play = false;
 
 playButton.addEventListener('click', function() {
     if (play) {
         song1.pause();
+        playButton.style.opacity = 0;
+
     } else {
         song1.play();
+        playButton.style.opacity = 1;
     }
     play = !play;
     console.log(play);

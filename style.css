@@ -299,6 +299,7 @@ hr{
     justify-content: center;
 }
 .controls{
+    position: relative;
     width: 50%;
     display: flex;
     align-items: center;
@@ -313,6 +314,11 @@ hr{
 .player-icons-play{
     height: 2.5rem;
     opacity: 1;
+}
+.player-icons-pause{
+    position: absolute;
+    height: 3rem;
+    opacity: 0;
 }
 .progress-bar{
     display: flex;

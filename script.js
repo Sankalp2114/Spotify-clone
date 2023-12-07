@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     audio.addEventListener('loadedmetadata', function () {
         updateEndTime();
+        updateStartTime();
     });
     function updateStartTime() {
         const currentTime = audio.currentTime;

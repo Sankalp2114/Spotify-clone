@@ -104,6 +104,8 @@ function updateBarp(){
     progressBar.style.background = `linear-gradient(to right, #1DB954 0%, #1DB954 ${value}%, #d3d3d3 0%, #d3d3d3 100%)`;
 }
 
+// something something
+
 
 
 

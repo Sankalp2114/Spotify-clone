@@ -24,7 +24,7 @@ songItem.forEach((element, i) => {
 document.addEventListener('DOMContentLoaded', function() {
     let volume = document.getElementById('volume');
     let audio = document.getElementById('song');
-    audio.volume = 0;
+    audio.volume = 0.1;
 
     volume.addEventListener('input', function(e) {
         audio.volume = e.currentTarget.value / 100;
@@ -66,10 +66,22 @@ document.addEventListener('DOMContentLoaded', function() {
         playButton.style.opacity = 1;
         audio.play();
         songIndex =index;
-        console.log(songIndex);
+       
     }
     audio.addEventListener('ended', function() {
         songIndex = (songIndex + 1) % songs.length;
+        playCurrentSong();
+    });
+    let nextButton = document.getElementById('next');
+
+    nextButton.addEventListener('click', function() {
+        songIndex = (songIndex + 1) % songs.length;
+        playCurrentSong();
+    });
+    let prevButton = document.getElementById('prev');
+
+    prevButton.addEventListener('click', function() {
+        songIndex = (songIndex - 1) % songs.length;
         playCurrentSong();
     });
 

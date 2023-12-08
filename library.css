@@ -321,6 +321,18 @@ hr{
     height: 3rem;
     opacity: 0;
 }
+#next{
+    transition: 0.2 ease-in;
+}
+#next:hover{
+    opacity: 1;
+}
+#prev{
+    transition: 0.2 ease-in;
+}
+#prev:hover{
+    opacity: 1;
+}
 .progress-bar{
     display: flex;
     flex-wrap: nowrap;

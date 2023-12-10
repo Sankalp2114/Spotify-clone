@@ -78,6 +78,7 @@ audio.volume = 0;
 
 volume.addEventListener('input',function(e){
     audio.volume = e.currentTarget.value / 100;
+    updateBar(volume);
 });
 
 let playButton = document.getElementById('pause-btn');

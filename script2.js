@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function changeSong(index) {
         audio.src = songs[index].location;
         audio.load();
-        play = false;
+        play = true;
         playButton.style.opacity = 1;
         audio.play();
         songIndex =index;

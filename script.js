@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const seconds = Math.floor(currentTime % 60);
         const formattedTime = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
         startTimeSpan.textContent = formattedTime;
-        audio.currentTime = (input.value / 100) * totalTime;
     }
     const totalTime = audio.duration;
     const endMinutes = Math.floor(totalTime / 60);

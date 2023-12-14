@@ -310,7 +310,7 @@ hr{
 }
 .player-icons{
     height: 1rem;
-    opacity: 0.5;
+    opacity: 1;
 }
 .player-icons-play{
     height: 2.5rem;
@@ -322,12 +322,14 @@ hr{
     opacity: 0;
 }
 #next{
+    opacity:1;
     transition: 0.2 ease-in;
 }
 #next:hover{
     opacity: 1;
 }
 #prev{
+    opacity: 1;
     transition: 0.2 ease-in;
 }
 #prev:hover{

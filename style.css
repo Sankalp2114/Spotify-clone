@@ -309,7 +309,7 @@ hr{
 }
 .player-icons{
     height: 1rem;
-    opacity: 0.5;
+    opacity: 1;
 }
 .player-icons-play{
     height: 2.5rem;
